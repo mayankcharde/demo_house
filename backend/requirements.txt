@@ -1,0 +1,8 @@
+flask
+flask-cors
+pandas
+numpy
+scikit-learn
+pymongo
+joblib
+python-dotenv==1.0.0

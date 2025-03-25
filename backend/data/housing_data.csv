@@ -1,0 +1,4 @@
+import pandas as pd
+
+# Use relative path from the script location
+df = pd.read_csv("data/housing_data.csv")
