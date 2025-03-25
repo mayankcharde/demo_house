@@ -48,7 +48,7 @@ export default function PredictionAnalytics({ shouldRefresh }) {
     
     try {
       setDeletingId(id);
-      const response = await axios.delete(`http://localhost:5000/delete_prediction/${id}`);
+      const response = await axios.delete(`https://demo-house.onrender.com/delete_prediction/${id}`);
       if (response.status === 200) {
         await fetchAnalytics();
       }
