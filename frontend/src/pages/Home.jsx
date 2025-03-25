@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const fetchHouses = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/get_houses");
+        const response = await axios.get("https://demo-house.onrender.com/get_houses");
         setHouses(response.data);
         setLoading(false);
       } catch (error) {

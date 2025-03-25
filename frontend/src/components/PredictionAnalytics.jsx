@@ -27,7 +27,7 @@ export default function PredictionAnalytics({ shouldRefresh }) {
   const fetchAnalytics = useCallback(async () => {
     try {
       setIsLoading(true);
-      const response = await axios.get('http://localhost:5000/get_analytics');
+      const response = await axios.get('https://demo-house.onrender.com/get_analytics');
       setAnalytics(response.data);
     } catch (error) {
       console.error('Error fetching analytics:', error);

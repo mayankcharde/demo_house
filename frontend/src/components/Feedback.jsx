@@ -13,7 +13,7 @@ export default function Feedback() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/submit_feedback', { rating, comment });
+      await axios.post('https://demo-house.onrender.com/submit_feedback', { rating, comment });
       setStatus('success');
       setRating(0);
       setComment('');

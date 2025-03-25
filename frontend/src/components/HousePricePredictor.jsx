@@ -29,7 +29,7 @@ export default function HousePricePredictor({ onPredictionComplete }) {
     setError(null);
     
     try {
-      const response = await axios.post("http://localhost:5000/predict", {
+      const response = await axios.post("https://demo-house.onrender.com/predict", {
         features: features.map(Number),
       });
       setPredictedPriceINR(response.data.price_inr);
